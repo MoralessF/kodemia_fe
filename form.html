@@ -4,21 +4,83 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
         <title>Form</title>
     </head>
     <body>
-        <form action="https://reqres.in/api/users" method="post">
-            <label for="name">
-                User
-            </label>
-            <input type="text" name='name' placeholder="ej. noobMaster69">
-            <br/> <br/>
-            <label for="job">
-                Password
-            </label>
-            <input type="text" name='job' placeholder="ej. ***-+_420">
-            <br/> <br/>
-            <input type="submit">
-        </form>
+        <header class="header">
+            <a href="https://kodemia.mx/">
+                <img class="header-img" src="kodemialogo.png" alt="logo kodemia">
+            </a>
+        </header>
+        <section class="register">
+            <h2>
+                Sign Up!
+            </h2>
+            <p>
+                It's free and anyone can join
+            </p>
+            <section class="register_container">
+                <form class="register_container-form" action="https://reqres.in/api/users" method="post">
+                    <div>
+                        <label for="first_name">
+                            First Name:
+                        </label>
+                        <input type="text" name='first_name' placeholder="ej. Mark">
+                    </div>
+                    <br/>
+                    <div>
+                        <label for="last_name">
+                            Last Name:
+                        </label>
+                        <input type="text" name='last_name' placeholder="ej. Zuckerberg">
+                    </div>
+                    <br/>
+                    <div>
+                        <label for="email">
+                            Your E-mail:
+                        </label>
+                        <input type="email" name="email" placeholder="ej. mark88@hotmail.com">
+                    </div>
+                    <br/>
+                    <div>
+                        <label for="password">
+                            New Password:
+                        </label>
+                        <input type="password" name="password" placeholder="ej. *******">
+                    </div>
+                    <br/>
+                    <div>
+                        <label for="gender">
+                            I identify myself as:
+                        </label>
+                        <input list="genders" name="gender" placeholder="ej. Female">
+                    </div>
+                        <datalist id="genders">
+                            <option value="Non-binary">
+                            <option value="Female">
+                            <option value="Male">
+                        </datalist>
+                    <br/>
+                    <div>
+                        <label for="birthday">
+                            Birthday:
+                        </label>
+                        <input type="date" name="birthday">
+                    </div>
+                    <br/>
+                    <input class="register_container-form-button" type="submit" value="Sign Up">
+                </form>
+            </section>
+        </section>
+        <footer class="footer">
+            <p>
+                <a class="footer-link" href="">
+                    Create a page
+                </a>
+                for a celebrity, band or business
+            </p>
+        </footer>
     </body>
 </html>
