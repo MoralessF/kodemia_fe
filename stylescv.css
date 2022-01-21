@@ -1,0 +1,74 @@
+body
+{
+    background:linear-gradient(#fff,#82e2e6);
+    font-family: 'Muli', sans-serif;
+    cursor:auto;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 20px;
+}
+.main
+{
+    display: flex;
+    align-items: center;
+}
+
+.main_start
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.main_start img
+{
+    margin-right: 20px;
+    border-radius: 20px;
+    width: 200px;
+}
+
+.main_contact
+{
+    width: 450;
+    border-radius: 20px;
+    padding: 10px;
+    margin-left: 20px;
+    background-color:rgba(0, 0, 0, .1) ;
+}
+
+.main_contact table td
+{
+    width: 100px;
+}
+
+.PEandE
+{
+    display: flex;
+    justify-content:space-between;
+    align-items:flex-start;
+}
+
+.PEandE section
+{
+    width: 50%;
+    margin-top: 20px;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+.extras
+{
+   
+    display: flex;
+    justify-content: space-evenly;
+  
+}
+
+.extras section
+{
+    width: 33%;
+    margin-top: 20px;
+    margin-right: 50px;
+    margin-left: 50px;
+}
